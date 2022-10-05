@@ -1,0 +1,3 @@
+Crie uma navbar de topo, que tenha 3 ítens textuais quaisquer separados com distâncias iguais que serão o links de navegação da aplicação em react A aplicação deve permitir a inserção de mais itens e “acomodar” automaticamente com igual espaçamento. Ao clicar em qualquer item, a aplicação deve chamar uma rota e mostrar um conteúdo qualquer. O comportamento deve ser sem reload, como uma SPA. Utilizando typescript.
+
+Tempo máximo de teste:  30 min

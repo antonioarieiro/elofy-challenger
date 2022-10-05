@@ -1,5 +1,4 @@
-const defaultValue = 'test'
-
+import  NavBar  from "./NavBar/NavBar";
 export const Components = {
-  defaultValue
+  NavBar
 };
