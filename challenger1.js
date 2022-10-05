@@ -9,7 +9,12 @@ Tempo máximo de teste: 30 min
 
 */
 
-function isPalindrome(word) {
-  word.split()
-  return word
-}
+ function checkPalindrome(word:string) {
+    var str = word.toLocaleLowerCase()
+    for(var a = 0; a < str.length / 2; a++) {
+      if(str[a] != str[str.length - a - 1]) {
+        console.log(false);
+      }
+    }
+    console.log(true)
+  }
