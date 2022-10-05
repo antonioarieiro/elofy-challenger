@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import RouterComponent from './_router/RouterComponent';
 function App() {
+
+  function checkPalindrome(word:string) {
+    var str = word.toLocaleLowerCase()
+    for(var a = 0; a < str.length / 2; a++) {
+      if(str[a] != str[str.length - a - 1]) {
+        console.log(false);
+      }
+    }
+    console.log(true)
+  }
+  React.useEffect(() => {
+   checkPalindrome('Anilina')
+   checkPalindrome('Arara')
+   checkPalindrome('Esse')
+   checkPalindrome('Reviver')
+   checkPalindrome('Tases')
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterComponent />
     </div>
   );
 }
